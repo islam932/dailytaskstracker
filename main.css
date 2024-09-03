@@ -1,0 +1,219 @@
+body {
+    background-image: linear-gradient(to right, #b1bfff, #4d2c98);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-family:  Arial, Helvetica;
+}
+
+.form {
+    width: 750px;
+    background-color: rgb(228, 228, 228);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.input, .input2 {
+    width: 5%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.add, .add2 {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.add {
+    background-image: linear-gradient(to right, #728cff, #6435d2);
+    color: white;
+    opacity: 1;
+    transform: translateX(35px);
+}
+
+.add2 {
+    background-color: #5f7cff;
+    color: white;
+    opacity: 0;
+    transform: translateX(-35.59px);
+}
+
+.add:hover {
+    opacity: 0;
+}
+
+.add2:hover {
+    opacity: 1;
+}
+
+button {
+    display: none;
+    text-wrap: nowrap;
+}
+.tasks {
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 750px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        display: block;
+    }
+    .form, .tasks {
+        width: 250px;
+    }
+    .add, button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 5px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+        text-wrap: wrap;
+        margin-top: 10px;
+        width: 48%;
+    }
+    .input {
+        width: 98%;
+        height: 50px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid rgb(189, 189, 189);
+        font-size: 15px;
+    }
+
+}
+
+.tasks .task {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.1s;
+    cursor: default;
+    border: 2px solid rgb(0, 0, 0);
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 88%;
+}
+
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.tasks .task:hover {
+    background-color: #e8e8e8;
+}
+
+.tasks .task .del {
+    font-weight: bold;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px -20px;
+    transform: translateX(75%);
+    transition: 0.1s;
+}
+
+.ti {
+    border-left: 3px solid #5e74d9;
+    border-right: 3px solid #5e74d9;
+    padding: 0px 60px;
+}
+
+.tasks .task .del:hover {
+    background-color: rgb(202, 0, 0);
+}
+
+@media (max-width: 767px) {
+    .tasks .task {
+        font-size: 22px;
+    }
+    .tasks .task .del {
+        font-size: 12px;
+    }
+}
+.streak, .streak2 {
+    font-size: 50px;
+    color: #4c00ff;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(155, 155, 155));
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 75px;
+    border: 2px solid black;
+    user-select: none;
+    padding: 10px;
+}
+.streak2 {
+    margin-top: -84px;
+
+}
+
+.st {
+        color: white;
+        transform: translateY(30px);
+}
+.con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quo {
+    margin-top: 5px;
+    color: white;
+    font-family:serif ;
+    font-weight: bold;
+    font-style:italic;
+    font-size: 25px;
+    width: 500px;
+    opacity: .5;
+    text-align: center;
+    .name {
+        font-family:Arial, Helvetica, sans-serif ;
+        font-weight: bold;
+        font-style:normal;
+        margin-top: 10px;
+        font-size: 12px;
+        text-align:start;
+        padding-left: 50px;
+    }
+}
